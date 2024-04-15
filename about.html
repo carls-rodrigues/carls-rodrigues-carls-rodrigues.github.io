@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <title>About Me - Carlos Rodrigues</title>
+</head>
+<body>
+  <div class="container">
+    <div class="about-hero ">
+      <header class="header">
+        <nav id="menu"></nav>
+        <button id="language" onclick="switchLanguage()" type="button"></button>
+      </header>
+      <div class="about__content">
+        <section class="about-left">
+          <div class="about-avatar">
+            <img src="/assets/avatar.jpeg" alt="Carlos Rodrigues">
+          </div>
+          <div class="about-head">
+            <h3>Carlos Rodrigues</h3>
+            <p>PhD Candidate at Stanford University</p>
+          </div>
+          <div class="about-menu">
+            <ul>
+              <li>
+                <img src="/assets/svg/location.svg" alt="Location">
+                <span href="#">Rio Grande, RS, BR</span>
+              </li>
+              <li>
+                <img src="/assets/svg/x-twitter.svg" alt="Twitter">
+                <a href="https://twitter.com/cerfdotdev" target="_blank">Twitter</a>
+              </li>
+              <li>
+                <img src="/assets/svg/github.svg" alt="Github">
+                <a href="http://github.com/carls-rodrigues" target="_blank">Github</a>
+              </li>
+              <li>
+                <img src="/assets/svg/gitlab.svg" alt="GitLab">
+                <a href="https://gitlab.com/carlsrodrigues" target="_blank">GitLab</a>
+              </li>
+              <li>
+                <img src="/assets/svg/google-scholar.svg" alt="Google Scholar">
+                <a href="https://scholar.google.com/citations?user=kGIEiPcAAAAJ&hl=en" target="_blank">Google Scholar</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="about-right">
+          <div class="about-inner-section"> <!-- education -->
+            <h1 class="about-section-title">Education</h1>
+            <ul>
+              <li>
+                <span>Ph.D in Computer Science, Stanford University, Sept 2018 -</span>
+              </li>
+              <li>
+                <span>B.S. in Computer Science and Philosophy, summa cum laude, Dartmouth College, 2014 - 2018</span>
+              </li>
+            </ul>
+          </div>
+          <div class="about-inner-section"> <!-- work experience -->
+            <h1 class="about-section-title">Work experience</h1>
+            <ul>
+              <li>
+                <span>Software Engineering Intern, June 2016 – Sept 2016</span>
+                <ul>
+                  <li>
+                    <span>Google, Mountain View, CA</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="about-inner-section"> <!-- publications -->
+            <h1 class="about-section-title">Publications</h1>
+            <ul>
+              <li>
+                <span>Ph.D in Computer Science, Stanford University, Sept 2018 -</span>
+                <ul>
+                  <li>
+                    <span>Colin Wei, Kendrick Shen, Yining Chen, Tengyu Ma</span>
+                  </li>
+                  <li>
+                    <span>Manuscript arXiv:2010.03622</span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>B.S. in Computer Science and Philosophy, summa cum laude, Dartmouth College, 2014 - 2018</span>
+              </li>
+            </ul>
+          </div>
+          <div class="about-inner-section"> <!-- awards -->
+            <h1 class="about-section-title">Awards</h1>
+            <ul>
+              <li>
+                <span>Stanford Graduate Fellowship, Stanford University, 2018 - 2021</span>
+              </li>
+            </ul>
+          </div>
+           <div class="about-inner-section"> <!-- teaching -->
+            <h1 class="about-section-title">Teaching</h1>
+            <ul>
+              <li>
+                <span>Undergraduate Teaching Assistant, Jan 2016 - June 2018</span>
+                <ul>
+                  <li>
+                    <span>CS 30: Discrete Math</span>
+                  </li>
+                  <li>
+                    <span>Dartmouth College, Hanover, NH</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="about-inner-section"> <!-- services and leadership -->
+            <h1 class="about-section-title">Service and leadership</h1>
+            <ul>
+              <li>
+                <span>Reviewer for NeurIPS 2020, ICML 2020, NeurIPS 2019 Workshop</span>
+              </li>
+            </ul>
+          </div>
+          <div class="about-inner-section"> <!-- skills -->
+            <h1 class="about-section-title">Skills</h1>
+            <ul>
+              <li>
+                <span>Pytorch, Tensorflow, Spark</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <p>@2024 Carlos Rodrigues</p>
+      </footer>
+    </div>
+  </div>
+  <script type="text/javascript" src="./scripts/index.js"></script>
+  <script type="text/javascript" src="./scripts/menu.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js" integrity="sha512-CwxrLIN0dww6lRc/oKeZiI9oGlOob2HPMU0Yu0g+P3/G1cuTii+tt0jpyEKhilfrV7D/zmvKiVPIHUDU6xbBxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
