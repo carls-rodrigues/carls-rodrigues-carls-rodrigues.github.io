@@ -1,3 +1,5 @@
+import jsyaml from 'js-yaml'
+
 function loadCurrentLanguage() {
   const lang = localStorage.getItem('language');
   if (!lang) {
@@ -10,7 +12,7 @@ function loadCurrentLanguage() {
   }
   return lang;
 }
-async function loadYAML(language) {
+async function loadYAML(language: string) {
   const data = await fetch(`./assets/config/config-${language}.yaml`)
     .then(response => response.text())
     .then(yamlData => {
