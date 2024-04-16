@@ -9,10 +9,9 @@ function buildMenu(data, language) {
   }
   langSelector.appendChild(flagIcon);
 
-  const menuMap = data[`menu-${language}`]
   let menuList = document.createElement("ul");
   const current_url = window.location.pathname;
-  for (const [key, value] of Object.entries(menuMap)) {
+  for (const [key, value] of Object.entries(data.menu)) {
     let menuItem = document.createElement("li");
     let menuLink = document.createElement("a");
     if (key === "curriculum vitae") {
@@ -27,9 +26,6 @@ function buildMenu(data, language) {
     menuLink.textContent = key;
     menuItem.appendChild(menuLink);
     menuList.appendChild(menuItem);
-    if (current_url.includes(value)) {
-      console.log("Current URL: ", current_url);
-    }
   }
   menu.appendChild(menuList);
 }

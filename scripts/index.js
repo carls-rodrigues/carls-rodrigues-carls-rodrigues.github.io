@@ -10,8 +10,8 @@ function loadCurrentLanguage() {
   }
   return lang;
 }
-async function loadYAML() {
-  const data = await fetch('./assets/config/config.yaml')
+async function loadYAML(language) {
+  const data = await fetch(`./assets/config/config-${language}.yaml`)
     .then(response => response.text())
     .then(yamlData => {
       const data = jsyaml.load(yamlData);
@@ -21,26 +21,19 @@ async function loadYAML() {
   return data
 }
 
-function home(data, language) {
-  let name = data?.name;
-  let description = data?.description;
-  const title = document.querySelector('#name');
-  const desc = document.querySelector('#description');
-  title.innerHTML = name;
-  desc.innerHTML = description;
-}
-
 (async function () {
   const language = loadCurrentLanguage();
   const current_url = window.location.pathname;
-  const data = await loadYAML();
+  const data = await loadYAML(language);
   switch (current_url) {
     case '/':
       window.location.href = '/index.html';
       break;
     case '/index.html':
-      home(data, language);
+      home(data);
       break;
+    case '/about.html':
+      aboutMePage(data['about-page']);
     default:
       break;
   }

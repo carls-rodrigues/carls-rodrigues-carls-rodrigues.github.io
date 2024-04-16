@@ -107,12 +107,18 @@
 }
 .about-inner-section ul li ul li {
   list-style: circle;
-  margin: 1rem 0;
+  margin: .5rem 0;
 } 
 .about-inner-section ul li ul li::marker {
   color: #333;
 }
+.about-inner-section ul li ul li span {
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
 .about-inner-section ul li span {
   font-size: 1.6rem;
   color: #333;
+  font-weight: 500;
 }

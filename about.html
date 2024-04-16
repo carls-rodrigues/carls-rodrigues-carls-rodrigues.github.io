@@ -25,118 +25,19 @@
             <img src="/assets/avatar.jpeg" alt="Carlos Rodrigues">
           </div>
           <div class="about-head">
-            <h3>Carlos Rodrigues</h3>
-            <p>PhD Candidate at Stanford University</p>
+            <h3 id="about-name-id"></h3>
+            <p id="about-biography-id"></p>
           </div>
-          <div class="about-menu">
-            <ul>
-              <li>
-                <img src="/assets/svg/location.svg" alt="Location">
-                <span href="#">Rio Grande, RS, BR</span>
-              </li>
-              <li>
-                <img src="/assets/svg/x-twitter.svg" alt="Twitter">
-                <a href="https://twitter.com/cerfdotdev" target="_blank">Twitter</a>
-              </li>
-              <li>
-                <img src="/assets/svg/github.svg" alt="Github">
-                <a href="http://github.com/carls-rodrigues" target="_blank">Github</a>
-              </li>
-              <li>
-                <img src="/assets/svg/gitlab.svg" alt="GitLab">
-                <a href="https://gitlab.com/carlsrodrigues" target="_blank">GitLab</a>
-              </li>
-              <li>
-                <img src="/assets/svg/google-scholar.svg" alt="Google Scholar">
-                <a href="https://scholar.google.com/citations?user=kGIEiPcAAAAJ&hl=en" target="_blank">Google Scholar</a>
-              </li>
-            </ul>
-          </div>
+          <div id="menu-left" class="about-menu"></div>
         </section>
         <section class="about-right">
-          <div class="about-inner-section"> <!-- education -->
-            <h1 class="about-section-title">Education</h1>
-            <ul>
-              <li>
-                <span>Ph.D in Computer Science, Stanford University, Sept 2018 -</span>
-              </li>
-              <li>
-                <span>B.S. in Computer Science and Philosophy, summa cum laude, Dartmouth College, 2014 - 2018</span>
-              </li>
-            </ul>
-          </div>
-          <div class="about-inner-section"> <!-- work experience -->
-            <h1 class="about-section-title">Work experience</h1>
-            <ul>
-              <li>
-                <span>Software Engineering Intern, June 2016 – Sept 2016</span>
-                <ul>
-                  <li>
-                    <span>Google, Mountain View, CA</span>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="about-inner-section"> <!-- publications -->
-            <h1 class="about-section-title">Publications</h1>
-            <ul>
-              <li>
-                <span>Ph.D in Computer Science, Stanford University, Sept 2018 -</span>
-                <ul>
-                  <li>
-                    <span>Colin Wei, Kendrick Shen, Yining Chen, Tengyu Ma</span>
-                  </li>
-                  <li>
-                    <span>Manuscript arXiv:2010.03622</span>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <span>B.S. in Computer Science and Philosophy, summa cum laude, Dartmouth College, 2014 - 2018</span>
-              </li>
-            </ul>
-          </div>
-          <div class="about-inner-section"> <!-- awards -->
-            <h1 class="about-section-title">Awards</h1>
-            <ul>
-              <li>
-                <span>Stanford Graduate Fellowship, Stanford University, 2018 - 2021</span>
-              </li>
-            </ul>
-          </div>
-           <div class="about-inner-section"> <!-- teaching -->
-            <h1 class="about-section-title">Teaching</h1>
-            <ul>
-              <li>
-                <span>Undergraduate Teaching Assistant, Jan 2016 - June 2018</span>
-                <ul>
-                  <li>
-                    <span>CS 30: Discrete Math</span>
-                  </li>
-                  <li>
-                    <span>Dartmouth College, Hanover, NH</span>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="about-inner-section"> <!-- services and leadership -->
-            <h1 class="about-section-title">Service and leadership</h1>
-            <ul>
-              <li>
-                <span>Reviewer for NeurIPS 2020, ICML 2020, NeurIPS 2019 Workshop</span>
-              </li>
-            </ul>
-          </div>
-          <div class="about-inner-section"> <!-- skills -->
-            <h1 class="about-section-title">Skills</h1>
-            <ul>
-              <li>
-                <span>Pytorch, Tensorflow, Spark</span>
-              </li>
-            </ul>
-          </div>
+          <div id="education" class="about-inner-section"></div><!-- education -->
+          <div id="work" class="about-inner-section"></div> <!-- work experience -->
+          <div id="publication" class="about-inner-section"></div><!-- publications -->
+          <div id="awards" class="about-inner-section"></div> <!-- awards -->
+           <div id="teaching" class="about-inner-section"></div> <!-- teaching -->
+          <div id="services_and_leadership" class="about-inner-section"></div> <!-- services and leadership -->
+          <div id="skills" class="about-inner-section"></div> <!-- skills -->
         </section>
       </div>
       <footer class="footer">
@@ -144,8 +45,10 @@
       </footer>
     </div>
   </div>
+  <script type="text/javascript" src="./scripts/icons.js"></script>
   <script type="text/javascript" src="./scripts/index.js"></script>
   <script type="text/javascript" src="./scripts/menu.js"></script>
+  <script type="text/javascript" src="./scripts/about.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js" integrity="sha512-CwxrLIN0dww6lRc/oKeZiI9oGlOob2HPMU0Yu0g+P3/G1cuTii+tt0jpyEKhilfrV7D/zmvKiVPIHUDU6xbBxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
