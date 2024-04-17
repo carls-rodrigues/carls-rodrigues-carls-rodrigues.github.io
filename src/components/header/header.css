@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2rem 0;
+  height: 2.7rem;
+}
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.header a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+.header a:hover {
+  color: #666;
+  transition: 300ms;
+  text-decoration: underline;
+}
+.header button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.header button img {
+  width: 2.2rem;
+  height: 2.2rem;
+}

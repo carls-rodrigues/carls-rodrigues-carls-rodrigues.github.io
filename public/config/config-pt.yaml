@@ -1,0 +1,66 @@
+name: Carlos Rodrigues
+description: Machine and Deep Learning
+
+menu:
+  home: /
+  sobre mim: about
+  blog: blog
+  curriculum vitae: http://lattes.cnpq.br/0176590198026811
+
+about-page:
+  name: Carlos Rodrigues
+  short_biography: Doutorando na Universidade Stanford
+  user_info:
+    - title: Location
+      content: "Rio Grande, RS, BR"
+    - title: "Twitter"
+      link: "https://twitter.com/cerfdotdev"
+    - title: "LinkedIn"
+      link: "https://www.linkedin.com/in/carlsrodrigues/"
+    - title: "GitHub"
+      link: "https://github.com/carls-rodrigues"
+    - title: GitLab
+      link: "https://gitlab.com/carlsrodrigues"
+    - title: Google Scholar
+      link: "https://scholar.google.com/citations?user=kGIEiPcAAAAJ&hl=pt"
+  education: 
+    - title: Mestrado em Ciência da Computação, Universidade Federal de Rio Grande, 2017-2019
+      bullets: [Desenvolvimento de modelos de machine learning, Análise de dados, Desenvolvimento de pipelines de dados]
+    - title: Bacharelado em Ciência da Computação, Universidade Federal de Rio Grande, 2013-2017
+      bullets: [Desenvolvimento de modelos de machine learning, Análise de dados, Desenvolvimento de pipelines de dados]
+  experience: 
+    - title: Engenheiro de Machine Learning, Google, 2019-2020
+      bullets: [Desenvolvimento de modelos de machine learning, Análise de dados, Desenvolvimento de pipelines de dados]
+    - title: Cientista de Dados, Facebook, 2018-2019
+      bullets: [Desenvolvimento de modelos de machine learning, Análise de dados, Desenvolvimento de pipelines de dados]
+  publications: 
+    - title: "Doutorado em Ciência da Computação, Universidade Stanford, Set 2018"
+      bullets: ["Colin Wei, Kendrick Shen, Yining Chen, Tengyu Ma", "Manuscrito arXiv:2010.03622"]
+  awards: 
+    - title: "Prêmio de Pesquisador Destaque"
+      bullets: 
+        - "Organização: Sociedade Acadêmica XYZ, Ano: 2019"
+    - title: "Melhor Artigo Premiado"
+      bullets: 
+        - "Conferência: Conferência Internacional de Ciência de Dados, Ano: 2018"
+  teaching: 
+    - title: "Monitor de Ensino"
+      bullets: 
+        - "Curso: Introdução ao Aprendizado de Máquina, Instituição: Universidade ABC, Ano: 2021"
+    - title: "Palestrante Convidado"
+      bullets: 
+        - "Curso: Aplicações de Aprendizado Profundo, Instituição: Faculdade XYZ, Ano: 2020"
+  service_and_leadership: 
+    - title: "Revisor"
+      bullets: 
+        - "Revista: Revista de Ciência de Dados, Ano: 2022"
+    - title: "Voluntário de Conferência"
+      bullets: 
+        - "Conferência: Conferência de Inteligência Artificial, Ano: 2021"
+  skills: 
+    - title: "Linguagens de Programação"
+      bullets: 
+        - "Python, R"
+    - title: "Frameworks de Aprendizado de Máquina"
+      bullets: 
+        - "Pytorch, Tensorflow, Spark"
