@@ -60,7 +60,7 @@ about-page:
   skills: 
     - title: "Linguagens de Programação"
       bullets: 
-        - "Python, R"
+        - "Python, R, Rust, C++"
     - title: "Frameworks de Aprendizado de Máquina"
       bullets: 
         - "Pytorch, Tensorflow, Spark"

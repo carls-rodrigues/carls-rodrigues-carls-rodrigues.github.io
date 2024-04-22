@@ -39,8 +39,8 @@ function appendSection(id, sectionTitle, data) {
         ul.appendChild(liBullet);
       })
       li.appendChild(ul);
+      ulElement.appendChild(li);
     }
-    ulElement.appendChild(li);
   })
   parent.appendChild(ulElement);
 
@@ -57,8 +57,8 @@ function buildUserInfo(data) {
     icon.setAttribute('src', icons[el.title.toLowerCase()]);
     icon.setAttribute('alt', el.title);
     li.appendChild(icon);
-    if (el.title === 'Location') {
-      span.innerHTML = el.title;
+    if (el.title.toLowerCase() === 'location') {
+      span.innerHTML = el.content;
       li.appendChild(span);
     } else {
       anchor.setAttribute('href', el.link);

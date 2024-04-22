@@ -25,17 +25,15 @@ about-page:
       link: "https://scholar.google.com/citations?user=kGIEiPcAAAAJ&hl=en"
     
   education: 
-    - title: Master's Degree in Computer Science, Federal University of Rio Grande, 2017-2019
-      bullets: [Developed machine learning models, Conducted data analysis, Developed data pipelines]
-    - title: Bachelor's Degree in Computer Science, Federal University of Rio Grande, 2013-2017
-      bullets: [Developed machine learning models, Conducted data analysis, Developed data pipelines]
+    - title: Bachelor's Degree in Information Systems, Federal University of Rio Grande, 2024-2027
+      bullets: ["Thesis: Machine Learning Applications in Healthcare", "Advisor: Prof. John Doe"]
   experience:
     - title: Machine Learning Engineer, Google, 2019-2020
       bullets: [Developed machine learning models, Conducted data analysis, Developed data pipelines]
     - title: Data Scientist, Facebook, 2018-2019
       bullets: [Developed machine learning models, Conducted data analysis, Developed data pipelines]
   publications:
-    - title: "Ph.D in Computer Science, Stanford University, Sept 2018"
+    - title: "Theoretical Analysis of Self-Training with Deep Networks on Unlabeled Data"
       bullets: ["Colin Wei, Kendrick Shen, Yining Chen, Tengyu Ma", "Manuscript arXiv:2010.03622"]
   awards: 
     - title: "Outstanding Researcher Award"
@@ -61,7 +59,7 @@ about-page:
   skills: 
     - title: "Programming Languages"
       bullets: 
-        - "Python, R"
+        - "Python, R, Rust, C++"
     - title: "Machine Learning Frameworks"
       bullets: 
         - "Pytorch, Tensorflow, Spark"
