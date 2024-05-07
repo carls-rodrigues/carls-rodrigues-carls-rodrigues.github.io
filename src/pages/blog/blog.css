@@ -1,0 +1,33 @@
+.blog-hero{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.blog__content {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.blog__content-grid__box {
+  height: 20rem;
+  padding: 2rem;
+  word-break: all;
+}
+.blog__content-grid__box p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+
+}
+
+@media screen and (min-width: 768px) {
+  .blog__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

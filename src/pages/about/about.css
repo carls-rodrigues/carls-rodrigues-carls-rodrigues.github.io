@@ -7,40 +7,46 @@
 }
 .about__content {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   flex-grow: 1;
   gap:5rem;
 }
 .about-left {
   width: 100%;
   height: 100%;
-  max-width: 19rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* max-width: 19rem; */
 }
 .about-avatar img {
   width: 100%;
   height: 100%;
+  max-width: 19rem;
   object-fit: cover;
   border-radius: 50%;
 }
 .about-head h3 {
   font-size: 2rem;
   color: #333;
+  text-align: center;
 }
 .about-head h3:hover {
   color: #111;
 }
 .about-head p {
   font-size: 1.3rem;
+  text-align: center;
 
 }
 .about-menu {
   margin-top: 1rem;
 }
 .about-menu ul {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  /* gap: 1rem; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
 }
 .about-menu ul li {
   width: 100%;
@@ -86,39 +92,27 @@
   flex-direction: column;
   /* gap: 1rem; */
 }
-.about-section-title {
-  font-size: 2.8rem;
-  color: #333;
-  margin: 0;
-  font-weight: 600;
+
+@media screen and (min-width: 564px){
+  .about-menu ul {
+    grid-template-columns: repeat(3, 1fr);
+    /* flex-direction: column; */
+    /* gap: 1rem; */
+  }
 }
-.about-inner-section ul {
-  padding: 0 0 0 2rem;
-}
-.about-inner-section ul li {
-  list-style: inside;
-  margin: 1rem 0;
-}
-.about-inner-section ul li::marker {
-  color: #333;
-}
-.about-inner-section ul li ul {
-  padding: 0 0 0 3rem;
-}
-.about-inner-section ul li ul li {
-  list-style: circle;
-  margin: .5rem 0;
-} 
-.about-inner-section ul li ul li::marker {
-  color: #333;
-}
-.about-inner-section ul li ul li span {
-  color: #333;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-.about-inner-section ul li span {
-  font-size: 1.6rem;
-  color: #333;
-  font-weight: 500;
+
+@media screen and (min-width: 768px) {
+  .about-left {
+    max-width: 19rem;
+  }
+  .about-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about__content {
+    flex-direction: row;
+  }
+  
 }

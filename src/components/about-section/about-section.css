@@ -1,0 +1,22 @@
+.about-section-title {
+  font-size: 3rem;
+  color: #333;
+  margin: 0;
+  font-weight: 700;
+}
+.about-inner-section > ul {
+  padding: 0 0 0 2rem;
+}
+.sub-li {
+  list-style: inside;
+  margin: 1rem 0;
+}
+.sub-li::marker {
+  color: #333;
+}
+
+.sub-title {
+  font-size: 1.7rem;
+  color: #333;
+  font-weight: 600;
+}
