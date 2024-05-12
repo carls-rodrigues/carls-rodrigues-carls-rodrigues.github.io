@@ -3,14 +3,17 @@ import { useEffect, useState } from 'react'
 import Header from '../../components/header'
 import Container from '../../components/container'
 import { articles } from './articles'
-export default function Blog() {
 
+export default function Blog() {
   const [isLoading, setIsLoading] = useState(true)
+
   useEffect(() => {
     document.title = 'Blog'
     setIsLoading(false)
   }, [isLoading])
+
   if(isLoading) return null;
+  
   return (
     <Container>
       <section className="blog-hero">

@@ -24,8 +24,13 @@ export default function BlogPost() {
       })
     }
     setArticle(article ?? null)
-    setIsLoading(false)
     setText(article?.content.split('\n'))
+    setIsLoading(false)
+
+    return () => {
+      setArticle(null)
+      setText([])
+    }
   }, [params.bl, navigate])
   
   if (isLoading) return null;
