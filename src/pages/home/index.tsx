@@ -1,9 +1,7 @@
 import '../../assets/styles/animation.css';
 import './home.css';
 import Header from '../../components/header';
-import Footer from '../../components/footer';
 import { useState, useEffect } from 'react';
-import Container from '../../components/container';
 
 
 export default function Home() {
@@ -14,15 +12,12 @@ export default function Home() {
   }, [isLoading])
   if(isLoading) return null;
   return (
-    <Container>
-      <div className='hero'>
-        <Header />
-        <div className='hero__content text-blur-out'>
-          <h1 className='text-pop-up-top'>Carlos Rodrigues</h1>
-          <h2>Machine and Deep Learning</h2>
-        </div>
-        <Footer />
+    <div className='hero'>
+      <Header />
+      <div className='hero__content text-blur-out'>
+        <h1 className='text-pop-up-top'>Carlos Rodrigues</h1>
+        <h2>Machine and Deep Learning</h2>
       </div>
-    </Container>
+    </div>
   )
 }

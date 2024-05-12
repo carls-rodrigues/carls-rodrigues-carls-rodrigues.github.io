@@ -4,6 +4,7 @@ import About from './pages/about';
 import Blog from './pages/blog';
 import BlogPost from './pages/blog/[id]';
 import ErrorPage from './pages/error';
+import Container from './components/container';
 
 function App() {
   const router = createBrowserRouter([
@@ -33,7 +34,9 @@ function App() {
     }
   ])
   return (
-    <RouterProvider router={router} />
+    <Container>
+      <RouterProvider router={router} />
+    </Container>
   )
 }
 

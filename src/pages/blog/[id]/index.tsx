@@ -37,7 +37,7 @@ export default function BlogPost() {
   if (!article) return null
 
   return (
-    <div className='container'>
+    <section>
       <Header />
       <div className='b_container'>
         <article>
@@ -45,6 +45,6 @@ export default function BlogPost() {
           {text?.map((t, i) => <p key={i} className='b_paragraph'>{t}</p>)}
         </article>
       </div>
-    </div>
+    </section>
   );
 }

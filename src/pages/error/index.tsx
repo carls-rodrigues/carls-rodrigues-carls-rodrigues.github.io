@@ -35,12 +35,10 @@ export default function ErrorPage() {
   }, [state?.message, state?.returnTo, isLoading])
   if (isLoading) return null
   return (
-    <main className="container">
-      <div className="error_container">
-        <h1>ERROR 404</h1>
-        <p>{message}</p>
-        <a href={returnTo}>Go back to the {pages[returnTo as never]} page</a>
-      </div>
-    </main>
+    <div className="error_container">
+      <h1>ERROR 404</h1>
+      <p>{message}</p>
+      <a href={returnTo}>Go back to the {pages[returnTo as never]} page</a>
+    </div>
   )
 }
