@@ -21,7 +21,7 @@ export default function Blog() {
         <div className="blog__content">
           {
             articles.map((article) => (
-              <a href={`/blog/${article.title}`} key={article.id} className="blog__content-grid__box">
+              <a href={`/blog/${article.title}`} key={article.id}>
                 <div className="blog__content-grid__box">
                   <h1>{article.title}</h1>
                   <p>{article.content.substring(0, 580)}...</p>
