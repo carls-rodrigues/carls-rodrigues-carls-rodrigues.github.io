@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  min-width: 32.6rem;
 }
 body::-webkit-scrollbar {
   width: 1rem;
@@ -27,7 +28,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
 ul,
 li {
   list-style: none;

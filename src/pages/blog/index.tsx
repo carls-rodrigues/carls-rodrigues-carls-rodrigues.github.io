@@ -17,11 +17,13 @@ export default function Blog() {
         <Header />
         <div className="blog__content">
           {
-            articles.map(article => (
-              <div className="blog__content-grid__box">
-                <h1>{article.title}</h1>
-                <p>{article.content.substring(0, 580)}...</p>
-              </div>
+            articles.map((article) => (
+              <a href={`/blog/${article.title}`} key={article.id} className="blog__content-grid__box">
+                <div className="blog__content-grid__box">
+                  <h1>{article.title}</h1>
+                  <p>{article.content.substring(0, 580)}...</p>
+                </div>
+              </a>
             ))
           }
         </div>

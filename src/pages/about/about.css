@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  gap:5rem;
+  gap: 3rem;
 }
 .about-left {
   width: 100%;
@@ -30,6 +30,8 @@
   font-size: 2rem;
   color: #333;
   text-align: center;
+  margin-top: 2rem;
+  cursor: default;
 }
 .about-head h3:hover {
   color: #111;
@@ -37,7 +39,8 @@
 .about-head p {
   font-size: 1.3rem;
   text-align: center;
-
+  margin-top: 1rem;
+  cursor: default;
 }
 .about-menu {
   margin-top: 1rem;
@@ -90,14 +93,12 @@
 .about-inner-section {
   display: flex;
   flex-direction: column;
-  /* gap: 1rem; */
+  margin-top: 0rem;
 }
 
 @media screen and (min-width: 564px){
   .about-menu ul {
     grid-template-columns: repeat(3, 1fr);
-    /* flex-direction: column; */
-    /* gap: 1rem; */
   }
 }
 
@@ -113,6 +114,10 @@
   }
   .about__content {
     flex-direction: row;
+    gap: 5rem;
+  }
+  .about-inner-section {
+    margin-top: 2rem;
   }
   
 }

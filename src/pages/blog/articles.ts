@@ -26,7 +26,7 @@ Deep learning has a wide range of applications, including:
 
 4. **Recommendation Systems**: Deep learning is used in recommendation systems, such as those used by Netflix, Amazon, and Spotify, to provide personalized recommendations to users.
 
-5. **Robotics**: Deep learning is used in robotics to enable tasks such as object manipulation, navigation, and decision-making.
+5. **Robotics**: Deep learning is used in to enable tasks such as object manipulation, navigation, and decision-making.
 
 ### Conclusion
 
@@ -35,28 +35,40 @@ Deep learning is a powerful and versatile machine learning technique that has tr
 
 export const articles = [
   {
-    title: 'Introduction to Deep Learning',
+    id: 1,
+    title: 'Introduction to Deep Learning 1',
+    category: ['machine learging', 'artificial intelligence', 'deep learning', 'neural networks'],
     description: 'This is the first blog post',
     content: text
   },
   {
-    title: 'Introduction to Deep Learning',
+    id: 2,
+    title: 'Introduction to Deep Learning 2',
+    category: ['machine learging', 'artificial intelligence', 'deep learning', 'neural networks'],
     description: 'This is the first blog post',
     content: text
   },
   {
-    title: 'Introduction to Deep Learning',
+    id: 3,
+    title: 'Introduction to Deep Learning 3',
+    category: ['machine learging', 'artificial intelligence', 'deep learning', 'neural networks'],
     description: 'This is the first blog post',
     content: text
   },
   {
-    title: 'Introduction to Deep Learning',
+    id: 4,
+    title: 'Introduction to Deep Learning 4',
+    category: ['machine learging', 'artificial intelligence', 'deep learning', 'neural networks'],
     description: 'This is the first blog post',
     content: text
   },
   {
-    title: 'Introduction to Deep Learning',
+    id: 5,
+    title: 'Introduction to Deep Learning 5',
+    category: ['machine learging', 'artificial intelligence', 'deep learning', 'neural networks'],
     description: 'This is the first blog post',
     content: text
   }
 ]
+
+export type Article = typeof articles[0]
